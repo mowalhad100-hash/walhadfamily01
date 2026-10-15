@@ -1,0 +1,38 @@
+
+> walhad-family-mobile@1.0.0 test
+> node --test tests/model.test.mjs
+
+TAP version 13
+# Subtest: conversation ID is deterministic for either participant
+ok 1 - conversation ID is deterministic for either participant
+  ---
+  duration_ms: 0.873179
+  type: 'test'
+  ...
+# Subtest: profile initials handle empty and multiword names
+ok 2 - profile initials handle empty and multiword names
+  ---
+  duration_ms: 0.286525
+  type: 'test'
+  ...
+# Subtest: online heartbeat expires and explicit offline wins
+ok 3 - online heartbeat expires and explicit offline wins
+  ---
+  duration_ms: 0.269398
+  type: 'test'
+  ...
+# Subtest: empty and oversized messages are rejected
+ok 4 - empty and oversized messages are rejected
+  ---
+  duration_ms: 0.244968
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 64.248889

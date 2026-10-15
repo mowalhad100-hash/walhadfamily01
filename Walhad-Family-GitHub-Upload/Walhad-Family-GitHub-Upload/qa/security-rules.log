@@ -1,0 +1,148 @@
+
+> walhad-family-mobile@1.0.0 test:rules
+> firebase emulators:exec --project demo-walhad --only firestore,storage "node --test --test-concurrency=1 tests/*.rules.test.mjs"
+
+⬢  emulators: firebase-tools will drop support for Java version < 21 soon in firebase-tools@15. Please install a JDK at version 21 or above to get a compatible runtime.
+i  emulators: Starting emulators: firestore, storage
+i  emulators: Detected demo project ID "demo-walhad", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator UI websocket is running on 9150.
+i  Running script: node --test --test-concurrency=1 tests/*.rules.test.mjs
+TAP version 13
+# Subtest: unauthenticated and unverified users cannot discover profiles
+ok 1 - unauthenticated and unverified users cannot discover profiles
+  ---
+  duration_ms: 1996.382706
+  type: 'test'
+  ...
+# [2026-10-14T23:54:58.432Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61d6 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# Subtest: participant can send text, outsider cannot read or send
+ok 2 - participant can send text, outsider cannot read or send
+  ---
+  duration_ms: 310.671139
+  type: 'test'
+  ...
+# [2026-10-14T23:54:58.480Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61d7 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# [2026-10-14T23:54:58.527Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61d8 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# Subtest: sender impersonation and oversized messages fail
+ok 3 - sender impersonation and oversized messages fail
+  ---
+  duration_ms: 94.09309
+  type: 'test'
+  ...
+# [2026-10-14T23:54:58.589Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61d9 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L37, evaluation error at L45:21 for 'update' @ L45, false for 'update' @ L45
+# [2026-10-14T23:54:58.620Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61da error. Code: 7 Message: 7 PERMISSION_DENIED: No matching allow statements
+# Subtest: members cannot change participants or write call status
+ok 4 - members cannot change participants or write call status
+  ---
+  duration_ms: 92.512865
+  type: 'test'
+  ...
+# [2026-10-14T23:54:58.748Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61dc error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L16, false for 'update' @ L20
+# Subtest: owner can save profile and only owner may modify it
+ok 5 - owner can save profile and only owner may modify it
+  ---
+  duration_ms: 128.29879
+  type: 'test'
+  ...
+# [2026-10-14T23:54:58.827Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61de error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L37, evaluation error at L45:21 for 'update' @ L45, false for 'create' @ L37
+# [2026-10-14T23:54:58.872Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61df error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L37, evaluation error at L45:21 for 'update' @ L45, false for 'create' @ L37
+# Subtest: chat creation requires canonical ID, distinct existing members
+ok 6 - chat creation requires canonical ID, distinct existing members
+  ---
+  duration_ms: 123.083768
+  type: 'test'
+  ...
+# [2026-10-14T23:54:58.934Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61e1 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# [2026-10-14T23:54:58.975Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61e2 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# Subtest: blocking prevents messages in both directions
+ok 7 - blocking prevents messages in both directions
+  ---
+  duration_ms: 103.254107
+  type: 'test'
+  ...
+# [2026-10-14T23:54:59.075Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61e5 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# false for 'create' @ L29, false for 'update' @ L29
+# Subtest: device tokens are private and cannot be registered for another user
+ok 8 - device tokens are private and cannot be registered for another user
+  ---
+  duration_ms: 99.920234
+  type: 'test'
+  ...
+# [2026-10-14T23:54:59.116Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61e6 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# [2026-10-14T23:54:59.150Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x847f61e7 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+# evaluation error at L48:22 for 'create' @ L48, false for 'create' @ L48
+# Subtest: message schema rejects extra fields and empty bodies
+ok 9 - message schema rejects extra fields and empty bodies
+  ---
+  duration_ms: 74.910568
+  type: 'test'
+  ...
+# Subtest: two authenticated clients receive a real Firestore live message event
+ok 10 - two authenticated clients receive a real Firestore live message event
+  ---
+  duration_ms: 99.00688
+  type: 'test'
+  ...
+# Subtest: conversation list query is restricted to membership
+ok 11 - conversation list query is restricted to membership
+  ---
+  duration_ms: 147.186693
+  type: 'test'
+  ...
+# Subtest: verified owner can upload and delete their avatar
+ok 12 - verified owner can upload and delete their avatar
+  ---
+  duration_ms: 350.299135
+  type: 'test'
+  ...
+# Subtest: another user cannot change an avatar
+ok 13 - another user cannot change an avatar
+  ---
+  duration_ms: 15.43265
+  type: 'test'
+  ...
+# Subtest: unverified and anonymous uploads are denied
+ok 14 - unverified and anonymous uploads are denied
+  ---
+  duration_ms: 25.224221
+  type: 'test'
+  ...
+# Subtest: non-image uploads and files at least 5 MB are denied
+ok 15 - non-image uploads and files at least 5 MB are denied
+  ---
+  duration_ms: 137.595726
+  type: 'test'
+  ...
+# Subtest: only verified users can read profile photos through the Storage SDK
+ok 16 - only verified users can read profile photos through the Storage SDK
+  ---
+  duration_ms: 47.915542
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4315.280263
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+i  storage: Stopping Storage Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator
+⚠  emulators: firebase-tools will drop support for Java version < 21 soon in firebase-tools@15. Please install a JDK at version 21 or above to get a compatible runtime.

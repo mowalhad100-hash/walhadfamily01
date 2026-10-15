@@ -1,0 +1,18 @@
+walhad-family-mobile@1.0.0 /home/user/walhad-family-mobile
++-- expo@54.0.37
+| +-- @expo/config-plugins@54.0.5
+| | `-- xcode@3.0.1
+| |   `-- uuid@11.1.1 overridden
+| `-- @expo/metro-config@54.0.17 overridden
+|   `-- postcss@8.5.30 overridden
+`-- firebase-tools@14.27.0
+  +-- gaxios@6.7.1
+  | `-- uuid@11.1.1 overridden
+  +-- proxy-agent@6.5.0
+  | `-- pac-proxy-agent@7.2.0
+  |   `-- get-uri@6.0.5 overridden
+  |     `-- basic-ftp@6.2.3 overridden
+  +-- universal-analytics@0.5.4
+  | `-- uuid@14.0.3
+  `-- uuid@11.1.1 overridden
+

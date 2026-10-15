@@ -1,0 +1,68 @@
+
+> walhad-family-mobile@1.0.0 test:dependencies
+> node --test tests/dependency-compat.test.mjs
+
+TAP version 13
+# Subtest: Expo, React Native and Stream versions remain at the tested baseline
+ok 1 - Expo, React Native and Stream versions remain at the tested baseline
+  ---
+  duration_ms: 1.965472
+  type: 'test'
+  ...
+# Subtest: Expo Metro resolves patched PostCSS 8 and its parser/plugin/source-map APIs work
+ok 2 - Expo Metro resolves patched PostCSS 8 and its parser/plugin/source-map APIs work
+  ---
+  duration_ms: 34.35953
+  type: 'test'
+  ...
+# Subtest: all affected consumers resolve CommonJS UUID 11 with unchanged v4() behavior
+ok 3 - all affected consumers resolve CommonJS UUID 11 with unchanged v4() behavior
+  ---
+  duration_ms: 48.565635
+  type: 'test'
+  ...
+# Subtest: xcode consumer generates its expected 24-character uppercase project ID
+ok 4 - xcode consumer generates its expected 24-character uppercase project ID
+  ---
+  duration_ms: 47.54251
+  type: 'test'
+  ...
+# Subtest: Google GAX executes its actual UUID helper
+ok 5 - Google GAX executes its actual UUID helper
+  ---
+  duration_ms: 0.7457
+  type: 'test'
+  ...
+# Subtest: Gaxios builds multipart data with the patched UUID using an in-memory adapter
+ok 6 - Gaxios builds multipart data with the patched UUID using an in-memory adapter
+  ---
+  duration_ms: 18.519309
+  type: 'test'
+  ...
+# Subtest: get-uri downloads through basic-ftp 6 (MDTM)
+ok 7 - get-uri downloads through basic-ftp 6 (MDTM)
+  ---
+  duration_ms: 50.674859
+  type: 'test'
+  ...
+# Subtest: get-uri downloads through basic-ftp 6 (LIST fallback)
+ok 8 - get-uri downloads through basic-ftp 6 (LIST fallback)
+  ---
+  duration_ms: 55.024276
+  type: 'test'
+  ...
+# Subtest: patched FTP parser retains Unix listing field semantics
+ok 9 - patched FTP parser retains Unix listing field semantics
+  ---
+  duration_ms: 1.076941
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 322.27508

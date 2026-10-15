@@ -1,0 +1,12 @@
+{
+  "src/api.ts": true,
+  "src/theme.ts": true,
+  "src/firebase.ts": true,
+  "src/model.mjs": true,
+  "src/App.tsx": true,
+  "functions/src/index.ts": true,
+  "firestore.rules": true,
+  "storage.rules": true,
+  "app.config.js": true,
+  "eas.json": true
+}

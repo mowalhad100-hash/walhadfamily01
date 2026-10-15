@@ -1,0 +1,21 @@
+Installed image-size 1.2.1 require type: function
+Candidate image-size 2.0.4 require type: object named imageSize: function
+Metro consumer call sites:
+var _imageSize = _interopRequireDefault(require("image-size"));
+  const { width, height } = (0, _imageSize.default)(content);
+  const dimensions = isImage ? (0, _imageSize.default)(isImageInput) : null;
+node_modules/firebase-tools/lib/database/import.js:5:const Filter = require("stream-json/filters/Filter");
+node_modules/firebase-tools/lib/database/import.js:7:const StreamObject = require("stream-json/streamers/StreamObject");
+node_modules/firebase-tools/lib/frameworks/next/index.js:13:const stream_json_1 = require("stream-json");
+node_modules/firebase-tools/lib/frameworks/next/index.js:14:const Pick_1 = require("stream-json/filters/Pick");
+node_modules/firebase-tools/lib/frameworks/next/index.js:15:const StreamObject_1 = require("stream-json/streamers/StreamObject");
+node_modules/firebase-tools/lib/commands/auth-import.js:8:const Pick = require("stream-json/filters/Pick");
+node_modules/firebase-tools/lib/commands/auth-import.js:9:const StreamArray = require("stream-json/streamers/StreamArray");
+{
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./*": "./src/*",
+    "./web": "./src/web/index.js"
+  }
+}

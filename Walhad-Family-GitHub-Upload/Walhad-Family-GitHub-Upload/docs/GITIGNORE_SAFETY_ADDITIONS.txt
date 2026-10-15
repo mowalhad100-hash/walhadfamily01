@@ -1,0 +1,16 @@
+
+# Additional Walhad Family safeguards (append; retain existing rules).
+.env*
+!.env.example
+*.pem
+*.key
+*.keystore
+*.mobileprovision
+*.cer
+*service-account*.json
+*serviceAccount*.json
+*credentials*.json
+credentials.json
+*.zip
+*.sha256.txt
+qa/dependency-review/before/
